@@ -1,0 +1,49 @@
+GET http://localhost:5050
+
+### Item Create
+POST http://localhost:5050/item/create
+Content-Type: application/json
+
+{
+  "title": "title2",
+  "image": "dummy image",
+  "price": 777,
+  "description": "description",
+  "email": "dummy@email.com"
+}
+### Item Single Read 
+GET http://localhost:5050/item/679989c3a564402477631960
+
+### Item Update
+PUT http://localhost:5050/item/update/679989c3a564402477631960
+Content-Type: application/json
+
+{
+  "title": "title2",
+  "image": "dummy image",
+  "price": 777,
+  "description": "description",
+  "email": "dummy@email.com"
+}
+
+### Item Delete
+DELETE http://localhost:5050/item/delete/67998c08a9c5b6dd55750ad5
+
+### User Regist
+POST http://localhost:5050/user/register
+Content-Type: application/json
+
+{
+  "name": "kiyoshi",
+  "email": "dummy@example.com",
+  "password": "hogehoge"
+}
+
+### User Login
+POST http://localhost:5050/user/login
+Content-Type: application/json
+
+{
+  "email": "dummy@example.com",
+  "password": "hogehoge"
+}
