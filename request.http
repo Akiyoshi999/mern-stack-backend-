@@ -1,33 +1,38 @@
+// Item All 
 GET http://localhost:5050
 
-### Item Create
+### Item Create (token)
 POST http://localhost:5050/item/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImR1bW15QGV4YW1wbGUuY29tIiwiaWF0IjoxNzM4MTE3OTcyLCJleHAiOjE3MzgyMDQzNzJ9.vyoSurXokC_Hha_LHQU2KBP_arLGRgxJ5uUnLBNUiAI
 Content-Type: application/json
 
 {
-  "title": "title2",
+  "title": "title3",
   "image": "dummy image",
-  "price": 777,
+  "price": 900,
   "description": "description",
-  "email": "dummy@email.com"
+  "email": ""
 }
+
 ### Item Single Read 
 GET http://localhost:5050/item/679989c3a564402477631960
 
 ### Item Update
-PUT http://localhost:5050/item/update/679989c3a564402477631960
+PUT http://localhost:5050/item/update/67999b2a12c80869f3fa9654
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImR1bW15QGV4YW1wbGUuY29tIiwiaWF0IjoxNzM4MTE3OTcyLCJleHAiOjE3MzgyMDQzNzJ9.vyoSurXokC_Hha_LHQU2KBP_arLGRgxJ5uUnLBNUiAI
 Content-Type: application/json
 
 {
   "title": "title2",
   "image": "dummy image",
-  "price": 777,
+  "price": 999,
   "description": "description",
-  "email": "dummy@email.com"
+  "email": ""
 }
 
 ### Item Delete
-DELETE http://localhost:5050/item/delete/67998c08a9c5b6dd55750ad5
+DELETE http://localhost:5050/item/delete/679989c3a564402477631960
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImR1bW15QGV4YW1wbGUuY29tIiwiaWF0IjoxNzM4MTE3OTcyLCJleHAiOjE3MzgyMDQzNzJ9.vyoSurXokC_Hha_LHQU2KBP_arLGRgxJ5uUnLBNUiAI
 
 ### User Regist
 POST http://localhost:5050/user/register
